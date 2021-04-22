@@ -1,52 +1,40 @@
 $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
-        // handle the invalid form...
         formError();
         submitMSG(false, "Did you fill in the form properly?");
     } else {
-        // everything looks good!
         event.preventDefault();
         submitForm();
     }
 });
 
 
-function submitForm(){
-    // Initiate Variables With Form Content
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var phone = $("#phone").val();
-    var purpose = $("#purpose").val();
-    var message = $("#message").val();
+function submitForm() {
+    const form = document.getElementById("contactForm")
+    const data = new FormData(form)
 
-    $.ajax({
-        type: "POST",
-        url: "assets/php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&phone=" + phone + "&purpose=" + purpose + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false,text);
-            }
-        }
-    });
+    fetch('/', {
+        method: 'POST',
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: new URLSearchParams(data).toString()
+    })
+        .then(() => formSuccess())
+        .catch(() => formError())
 }
 
-function formSuccess(){
+function formSuccess() {
     $("#contactForm")[0].reset();
     submitMSG(true, "Message Submitted!")
 }
 
-function formError(){
-    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+function formError() {
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
         $(this).removeClass();
     });
 }
 
-function submitMSG(valid, msg){
-    if(valid){
+function submitMSG(valid, msg) {
+    if (valid) {
         var msgClasses = "h3 text-center tada animated text-success";
     } else {
         var msgClasses = "h3 text-center text-danger";
