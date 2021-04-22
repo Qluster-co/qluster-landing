@@ -13,10 +13,12 @@ function submitForm() {
     const form = document.getElementById("contactForm")
     const data = new FormData(form)
 
+    let params = new URLSearchParams(data).toString();
+
     fetch('/', {
         method: 'POST',
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
-        body: new URLSearchParams(data).toString()
+        body: params.toString()
     })
         .then(() => formSuccess())
         .catch(() => formError())
