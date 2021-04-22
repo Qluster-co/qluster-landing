@@ -93,7 +93,6 @@ jQuery(function($) {
     day: 'Day',
     days: 'Days'
   }, function () {
-      alert('Done!');
   });
 
 
