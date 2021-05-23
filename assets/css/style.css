@@ -61,26 +61,32 @@ body {
     top: 15%;
     right: 50%;
 }
+
 #rocks img:nth-child(2) {
     top: 20%;
     right: 15%;
 }
+
 #rocks img:nth-child(3) {
     top: 60%;
     right: 10%;
 }
+
 #rocks img:nth-child(4) {
     top: 25%;
     left: 10%;
 }
+
 #rocks img:nth-child(5) {
     top: 50%;
     left: 0;
 }
+
 #rocks img:nth-child(6) {
     bottom: 10%;
     left: 10%;
 }
+
 #rocks img:nth-child(7) {
     bottom: 0;
     left: 50%;
@@ -95,6 +101,7 @@ body {
     color: white;
     display: inline-block;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .button:hover {
@@ -153,6 +160,15 @@ body {
 
 .focus {
     margin: 5vh 0;
+}
+
+#discord {
+    padding-top: 3px;
+}
+
+#discord:hover {
+    transform: translateY(-5px);
+    transition: transform .2s ease 0s;
 }
 
 #intro .content {
@@ -379,9 +395,9 @@ nav ul li:nth-child(5) a {
 }
 
 nav ul li:nth-child(6) a {
-    padding: 10px;
+    padding: 5px 20px;
     border-radius: 128px;
-    transform: translateY(-20%);
+    transform: translateY(-8%);
     transition: all 1s ease;
 }
 
