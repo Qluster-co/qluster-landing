@@ -107,6 +107,7 @@ export const Landing = () => {
                 <img src="./assets/images/rocks/white-rock-4.svg" alt="Rock" />
             </div>
             <img id="lower-blob" src="./assets/images/lower-blob.svg" alt="background image" />
+            <div id="lower-mobile-blob" />
         </div>
     )
 }
