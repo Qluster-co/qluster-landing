@@ -1,5 +1,8 @@
 import React from "react"
 import "./Landing.css"
+import { OverviewContent } from "./landing/OverviewContent"
+import { SignupDescription } from "./landing/SignupDescription"
+import { ResearchDescription } from "./landing/ResearchDescription"
 
 export const Landing = () => {
     return (
@@ -37,22 +40,7 @@ export const Landing = () => {
                     </a>
                 </div>
                 <div id="overview" className="fold">
-                    <div className="content">
-                        <div>
-                            <p>Introducing the future of</p>
-                            <img src="./assets/images/qluster-q.svg" alt="Qluster" />
-                        </div>
-                        <h3>Social Trading.</h3>
-                        <p>Qluster's social platform makes it easy for you to find social trading ideas from the
-                            convenience of
-                            any
-                            device. Launch into a hivemind of market intelligence and explore the markets with groups of
-                            like-minded
-                            traders from around the world.</p>
-                        <p className="focus">Join verified qlusters and subscribe to unlock exclusive member
-                            benefits</p>
-                        <h4>or form your own.</h4>
-                    </div>
+                    <OverviewContent />
                     <div className="action">
                         <h2>Sign up now for early access</h2>
                         <a href="#signup">
@@ -61,11 +49,7 @@ export const Landing = () => {
                     </div>
                 </div>
                 <div id="signup" className="fold">
-                    <div>
-                        <h2>Save your early access pass to trading made social</h2>
-                        <img src="./assets/images/right.svg" alt="look right" />
-                        <p>Receive the confirmation email to get started now</p>
-                    </div>
+                    <SignupDescription/>
                     <div>
                         <img src="./assets/images/qluster-white.svg" alt="qluster" />
                         <form name="contact" method="post" action="./signup-success.html" data-netlify="true">
@@ -75,14 +59,7 @@ export const Landing = () => {
                     </div>
                 </div>
                 <div id="research" className="fold">
-                    <div>
-                        <img src="./assets/images/qluster.svg" alt="qluster" />
-                        <p>We do the heavy lifting for you.</p>
-                        <p> Access detailed fundamental & technical intelligence with on-chain data analytics in our
-                            fortnightly
-                            report.</p>
-                        <p>Explore the markets with Qluster: Research</p>
-                    </div>
+                    <ResearchDescription/>
                     <img src="./assets/images/rocket.svg" alt="Rocket" />
                     <div>
                         <h2>Research</h2>

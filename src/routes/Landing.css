@@ -9,10 +9,7 @@ body {
     width: 100vw;
     margin: 0;
     overflow: auto;
-    overflow-x: hidden;
-}
-
-.site {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -321,7 +318,7 @@ body {
     cursor: pointer;
 }
 
-#research > div:nth-child(1) {
+#research div:nth-child(1) {
     padding-left: 5vw;
 }
 
@@ -331,7 +328,7 @@ body {
     padding-bottom: 6vh;
 }
 
-#research > div:nth-child(1) > p {
+#research > div:nth-child(1) p {
     color: #3C096C;
     font-size: 3vh;
     padding-bottom: 6vh;
@@ -505,7 +502,7 @@ li > a:hover, button:hover {
         width: 40vw;
     }
 
-    #research > div:nth-child(1) > p {
+    #research div:nth-child(1) p {
         font-size: 2vh;
         width: 80vw;
         padding-bottom: 1vh;

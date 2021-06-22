@@ -1,7 +1,7 @@
 import React from "react"
 import { BrowserRouter as Router, Route } from "react-router-dom"
-import { Landing } from "./Landing"
-import { SignupSuccess } from "./SignupSuccess"
+import { Landing } from "./routes/Landing"
+import { SignupSuccess } from "./routes/SignupSuccess"
 
 export const App = () =>
     <Router>
