@@ -5,16 +5,6 @@ import { SignupDescription } from "./landing/SignupDescription"
 import { ResearchDescription } from "./landing/ResearchDescription"
 
 export const Landing = () => {
-    /*const toggleNavLinks = () => {
-        const x = document.getElementById("navLinks")
-        if (x)
-            if (x.style.bottom === "0vh") {
-                x.style.bottom = "100vh"
-            } else {
-                x.style.bottom = "0vh"
-            }
-    }*/
-
     const enableNavLinks = () => {
         const links = document.getElementById("navLinks")
         if (links) {
