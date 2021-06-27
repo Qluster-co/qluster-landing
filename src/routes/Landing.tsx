@@ -5,6 +5,50 @@ import { SignupDescription } from "./landing/SignupDescription"
 import { ResearchDescription } from "./landing/ResearchDescription"
 
 export const Landing = () => {
+    const enableNavLinks = () => {
+        const links = document.getElementById("navLinks")
+        if (links) {
+            links.style.bottom = "50vh"
+            links.style.opacity = "1"
+        }
+
+        const overlay = document.getElementById("navOverlay")
+        if (overlay) {
+            overlay.style.bottom = "0vh"
+            overlay.style.opacity = "0.5"
+        }
+
+        const closeNav = document.getElementById("closeNav")
+        if (closeNav) {
+            closeNav.style.bottom = "40vh"
+            closeNav.style.opacity = "1"
+        }
+
+        document.body.style.overflow = "hidden"
+    }
+
+    const disableNavLinks = () => {
+        const links = document.getElementById("navLinks")
+        if (links) {
+            links.style.bottom = "100vh"
+            links.style.opacity = "0"
+        }
+
+        const overlay = document.getElementById("navOverlay")
+        if (overlay) {
+            overlay.style.bottom = "100vh"
+            overlay.style.opacity = "0"
+        }
+
+        const closeNav = document.getElementById("closeNav")
+        if (closeNav) {
+            closeNav.style.bottom = "100vh"
+            closeNav.style.opacity = "0"
+        }
+
+        document.body.style.overflow = "unset"
+    }
+
     return (
         <div className="wrapper">
             <div className="content">
@@ -13,8 +57,18 @@ export const Landing = () => {
                         <a href="#intro">
                             <img id="qluster" src="./assets/images/qluster.svg" alt="Qluster" />
                         </a>
+                        <div id="navOverlay" onClick={disableNavLinks} />
+                        <div id="navLinks">
+                            <a href="#research">Research</a>
+                            <a href="#signup">Early Access</a>
+                            <a href="https://discord.gg/QbZsjdMsV5">Discord</a>
+                            <a href="https://www.facebook.com/groups/156981244915722">Explore</a>
+                        </div>
+                        <div id="closeNav" onClick={disableNavLinks}>
+                            <span id="closeNavX">X</span>
+                        </div>
                         <a>
-                            <img id="burger" src="./assets/images/menu.svg" alt="Menu" />
+                            <img id="burger" src="./assets/images/menu.svg" alt="Menu" onClick={enableNavLinks} />
                         </a>
                     </div>
                     <nav>
@@ -27,7 +81,7 @@ export const Landing = () => {
                                 <img src="./assets/images/discord.svg" alt="Discord" />
                             </a>
                             <li><a href="https://www.facebook.com/groups/156981244915722"
-                                   className="gradient">Explore</a></li>
+                                className="gradient">Explore</a></li>
                         </ul>
                     </nav>
                     <div className="content">
@@ -49,7 +103,7 @@ export const Landing = () => {
                     </div>
                 </div>
                 <div id="signup" className="fold">
-                    <SignupDescription/>
+                    <SignupDescription />
                     <div>
                         <img src="./assets/images/qluster-white.svg" alt="qluster" />
                         <form name="contact" method="post" action="./signup-success.html" data-netlify="true">
@@ -59,7 +113,7 @@ export const Landing = () => {
                     </div>
                 </div>
                 <div id="research" className="fold">
-                    <ResearchDescription/>
+                    <ResearchDescription />
                     <img src="./assets/images/rocket.svg" alt="Rocket" />
                     <div>
                         <h2>Research</h2>
