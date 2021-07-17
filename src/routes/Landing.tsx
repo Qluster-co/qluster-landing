@@ -81,7 +81,7 @@ export const Landing = () => {
                                 <img src="./assets/images/discord.svg" alt="Discord" />
                             </a>
                             <li><a href="https://www.facebook.com/groups/156981244915722"
-                                className="gradient">Explore</a></li>
+                                   className="gradient">Explore</a></li>
                         </ul>
                     </nav>
                     <div className="content">
@@ -105,11 +105,7 @@ export const Landing = () => {
                 <div id="signup" className="fold">
                     <SignupDescription />
                     <div>
-                        <img src="./assets/images/qluster-white.svg" alt="qluster" />
-                        <form name="contact" method="post" action="./signup-success.html" data-netlify="true">
-                            <input name="email" placeholder="Enter your email address" />
-                            <button>Sign Up</button>
-                        </form>
+                        <iframe src="https://research.qluster.co/embed" width="480" height="320" scrolling="no" />
                     </div>
                 </div>
                 <div id="research" className="fold">
