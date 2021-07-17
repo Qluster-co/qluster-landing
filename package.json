@@ -30,6 +30,13 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "*.tsx, *.ts"
+        ]
+      }
+    ],
     "extends": [
       "universe/native",
       "eslint:recommended",

@@ -82,11 +82,11 @@ a {
     font-size: 4vh;
     font-weight: bold;
     margin: 0;
-    color: #52366D;
+    color: #52366d;
     text-decoration: none;
 }
 
 a:hover {
     transform: translateY(-5px);
-    transition: transform .2s ease 0s;
+    transition: transform 0.2s ease 0s;
 }

@@ -45,7 +45,8 @@ body {
     object-fit: fill;
 }
 
-#rocket, #rocks {
+#rocket,
+#rocks {
     height: 45vw;
     width: 45vw;
     position: absolute;
@@ -95,7 +96,7 @@ body {
 }
 
 .button {
-    background-color: #A85BE5;
+    background-color: #a85be5;
     border-radius: 128px;
     cursor: pointer;
     padding: 3% 10%;
@@ -108,7 +109,7 @@ body {
 
 .button:hover {
     background-color: #924ec7;
-    transition: background-color .2s ease 0s;
+    transition: background-color 0.2s ease 0s;
 }
 
 .slider {
@@ -133,7 +134,7 @@ body {
 
 .slider-button:active {
     flex: 1;
-    transition: flex .1s ease 0s;
+    transition: flex 0.1s ease 0s;
 }
 
 #down {
@@ -170,7 +171,7 @@ body {
 
 #discord:hover {
     transform: translateY(-5px);
-    transition: transform .2s ease 0s;
+    transition: transform 0.2s ease 0s;
 }
 
 #intro .content {
@@ -192,7 +193,7 @@ body {
 #intro .content > h3 {
     margin-top: 2vw;
     margin-bottom: 4vw;
-    color: #E0AAFF;
+    color: #e0aaff;
     font-size: 4vh;
 }
 
@@ -220,7 +221,7 @@ body {
 #overview .content h3 {
     margin-top: 1vw;
     margin-bottom: 4vw;
-    color: #E0AAFF;
+    color: #e0aaff;
     font-size: 4vh;
 }
 
@@ -252,12 +253,14 @@ body {
     height: 5vh;
 }
 
-#signup, #research {
+#signup,
+#research {
     flex-direction: row;
     align-items: center;
 }
 
-#signup > div, #research > div {
+#signup > div,
+#research > div {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -275,14 +278,14 @@ body {
 }
 
 #signup h2 {
-    color: #3C096C;
+    color: #3c096c;
     font-size: 4vh;
     width: 20vw;
 }
 
 #signup p {
     font-size: 2.5vh;
-    color: #3C096C;
+    color: #3c096c;
     padding-top: 2vh;
     width: 20vw;
 }
@@ -329,7 +332,7 @@ body {
 }
 
 #research > div:nth-child(1) p {
-    color: #3C096C;
+    color: #3c096c;
     font-size: 3vh;
     padding-bottom: 6vh;
     font-weight: bold;
@@ -393,7 +396,7 @@ nav ul li {
 }
 
 nav ul li:nth-child(5) a {
-    color: #3C096C;
+    color: #3c096c;
 }
 
 nav ul li:nth-child(6) a {
@@ -432,9 +435,8 @@ nav img {
     transform: translateY(-15%);
 }
 
-
 h4 {
-    color: #E0AAFF;
+    color: #e0aaff;
     font-size: 4vh;
     margin: 0;
 }
@@ -448,9 +450,10 @@ a {
     cursor: pointer;
 }
 
-li > a:hover, button:hover {
+li > a:hover,
+button:hover {
     transform: translateY(-5px);
-    transition: transform .2s ease 0s;
+    transition: transform 0.2s ease 0s;
 }
 
 #menu {
@@ -512,19 +515,19 @@ li > a:hover, button:hover {
 
     #research h2 {
         font-size: 3vh;
-        color: #3C096C;
+        color: #3c096c;
     }
 
     #research ul {
         font-size: 2vh;
         width: 60vw;
-        color: #3C096C;
+        color: #3c096c;
     }
 
     #research p {
         font-size: 3vh;
         width: 80vw;
-        color: #3C096C;
+        color: #3c096c;
     }
 
     .slider {
@@ -563,7 +566,7 @@ li > a:hover, button:hover {
     }
 
     #navLinks a {
-        color: #E0AAFF;
+        color: #e0aaff;
         flex: 0 !important;
     }
 
@@ -593,7 +596,7 @@ li > a:hover, button:hover {
     }
 
     #closeNavX {
-        color: #E0AAFF;
+        color: #e0aaff;
         font-size: x-large;
         font-weight: bold;
     }
@@ -645,7 +648,8 @@ li > a:hover, button:hover {
         margin-top: 25vh;
     }
 
-    #rocket, #rocks {
+    #rocket,
+    #rocks {
         height: 55vw;
         width: 55vw;
         top: 3vh;
@@ -656,7 +660,7 @@ li > a:hover, button:hover {
     #intro .content > h3 {
         margin-top: 4vw;
         margin-bottom: 6vw;
-        color: #E0AAFF;
+        color: #e0aaff;
         font-size: 4vh;
     }
 
@@ -691,10 +695,11 @@ li > a:hover, button:hover {
     }
 
     #overview .action h2 {
-        color: #E0AAFF;
+        color: #e0aaff;
     }
 
-    #signup, #research {
+    #signup,
+    #research {
         flex-direction: column;
     }
 
@@ -715,7 +720,6 @@ li > a:hover, button:hover {
     }
 
     #overview .content img {
-       display: none;
+        display: none;
     }
 }
-

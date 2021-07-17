@@ -1,8 +1,9 @@
 import React from "react"
+
 import "./Landing.css"
 import { OverviewContent } from "./landing/OverviewContent"
-import { SignupDescription } from "./landing/SignupDescription"
 import { ResearchDescription } from "./landing/ResearchDescription"
+import { SignupDescription } from "./landing/SignupDescription"
 
 export const Landing = () => {
     const enableNavLinks = () => {
@@ -73,21 +74,34 @@ export const Landing = () => {
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#intro"><img src="./assets/images/qluster.svg" alt="Qluster" /></a></li>
-                            <li><a href="#research">Research</a></li>
-                            <li><a href="#signup">Early Access</a></li>
+                            <li>
+                                <a href="#intro">
+                                    <img src="./assets/images/qluster.svg" alt="Qluster" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#research">Research</a>
+                            </li>
+                            <li>
+                                <a href="#signup">Early Access</a>
+                            </li>
                             <li className="spacer" />
                             <a href="https://discord.gg/QbZsjdMsV5" id="discord">
                                 <img src="./assets/images/discord.svg" alt="Discord" />
                             </a>
-                            <li><a href="https://www.facebook.com/groups/156981244915722"
-                                   className="gradient">Explore</a></li>
+                            <li>
+                                <a href="https://www.facebook.com/groups/156981244915722" className="gradient">
+                                    Explore
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                     <div className="content">
                         <h1>Don't explore the markets alone...</h1>
                         <h3>TRADING MADE SOCIAL</h3>
-                        <a className="button" href="#signup">Sign Up</a>
+                        <a className="button" href="#signup">
+                            Sign Up
+                        </a>
                     </div>
                     <a id="down" className="button" href="#overview">
                         <img src="./assets/images/down.svg" alt="down" />
@@ -118,7 +132,9 @@ export const Landing = () => {
                             <li>Edition 1 complementary</li>
                             <li>30% off your first 3 months</li>
                         </ul>
-                        <a className="button" href="http://research.qluster.co">Yes, I'm in</a>
+                        <a className="button" href="http://research.qluster.co">
+                            Yes, I'm in
+                        </a>
                     </div>
                 </div>
             </div>
