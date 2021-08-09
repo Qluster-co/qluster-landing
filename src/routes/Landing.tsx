@@ -1,4 +1,6 @@
+import Lottie from "lottie-react"
 import React from "react"
+import rocketLottie from "../lotties/rocket.json"
 
 import "./Landing.css"
 import { OverviewContent } from "./landing/OverviewContent"
@@ -60,8 +62,8 @@ export const Landing = () => {
                         </a>
                         <div id="navOverlay" onClick={disableNavLinks} />
                         <div id="navLinks">
-                            <a href="#research">Research</a>
-                            <a href="#signup">Early Access</a>
+                            <a href="#research" onClick={disableNavLinks} >Research</a>
+                            <a href="#signup" onClick={disableNavLinks} >Early Access</a>
                             <a href="https://discord.gg/QbZsjdMsV5">Discord</a>
                             <a href="https://www.facebook.com/groups/156981244915722">Explore</a>
                         </div>
@@ -139,7 +141,7 @@ export const Landing = () => {
                 </div>
             </div>
             <div id="top-blob" />
-            <img id="rocket" src="./assets/images/rocket.svg" alt="Rocket" />
+            <Lottie id="rocket" animationData={rocketLottie} alt="Rocket" />
             <div id="rocks">
                 <img src="./assets/images/rocks/purple-rock-1.svg" alt="Rock" />
                 <img src="./assets/images/rocks/purple-rock-2.svg" alt="Rock" />
