@@ -142,15 +142,6 @@ export const Landing = () => {
             </div>
             <div id="top-blob" />
             <Lottie id="rocket" animationData={rocketLottie} alt="Rocket" />
-            <div id="rocks">
-                <img src="./assets/images/rocks/purple-rock-1.svg" alt="Rock" />
-                <img src="./assets/images/rocks/purple-rock-2.svg" alt="Rock" />
-                <img src="./assets/images/rocks/purple-rock-3.svg" alt="Rock" />
-                <img src="./assets/images/rocks/white-rock-1.svg" alt="Rock" />
-                <img src="./assets/images/rocks/white-rock-2.svg" alt="Rock" />
-                <img src="./assets/images/rocks/white-rock-3.svg" alt="Rock" />
-                <img src="./assets/images/rocks/white-rock-4.svg" alt="Rock" />
-            </div>
             <img id="lower-blob" src="./assets/images/lower-blob.svg" alt="background image" />
             <div id="lower-mobile-blob" />
         </div>
